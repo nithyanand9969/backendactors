@@ -23,6 +23,7 @@ public class RecipeServiceImplementation implements RecipeService {
         createdRecipe.setDescription(recipe.getDescription());
         createdRecipe.setUser(recipe.getUser());
         createdRecipe.setCreatedAd(LocalDateTime.now());
+
         return recipeRepository.save(createdRecipe);
     }
 
